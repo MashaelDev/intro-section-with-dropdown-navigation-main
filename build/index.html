@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+</head>
+
+<body class="bg-white">
+
+
+    <header>
+        <nav class="flex justify-between p-5 ">
+
+
+            <img class="w-28 self-center lg:w-20 " src="images/logo.svg" alt="Logo">
+
+
+
+            <button class="btn-open focus:outline-none w-12 h-full lg:hidden ">
+                <img class="w-full" src="images/icon-menu.svg" alt="icon menu">
+            </button>
+
+
+
+            <!-- Link items -->
+            <div class="bg-white fixed top-0 right-0 w-8/12 h-screen flex flex-col p-4 gap-3 z-20 div-translateX div-navigation-item colorItemsLink
+                lg:flex-row lg:static lg:h-auto lg:w-auto lg:p-0 lg:flex-1 lg:justify-between lg:pl-16 lg:translate-x-0 xl:text-xl
+                ">
+                <div class="text-right lg:hidden">
+                    <button class="btn-close h-full">
+                        <img src=" images/icon-close-menu.svg" alt="close-menu">
+                    </button>
+                </div>
+
+                <div class="flex flex-col gap-3 lg:flex-row lg:items-start  lg:relative lg:gap-14">
+                    <a href="#" class="FeaturesLink dropdownHover">
+                        <span>Features</span>
+                        <img id="arrow-menu-features" class="inline-block ml-2" src="images/icon-arrow-down.svg"
+                            alt="arrow down">
+                    </a>
+                    <!-- dropdown menu -->
+                    <div
+                        class="dropdownFeatures bg-white hidden w-full lg:absolute lg:top-9 lg:-left-16 lg:rounded-xl lg:w-auto shadowitems  ">
+                        <div class="flex flex-col gap-3 py-3 pl-6 lg:p-6">
+                            <a href="#" class="flex flex-row gap-2">
+                                <div class="inline-block self-center">
+                                    <img class="" src="images/icon-todo.svg" alt="to do list icon">
+                                </div>
+                                <span>ToDo List</span>
+                            </a>
+
+                            <a href="#" class="flex flex-row gap-2">
+                                <div class="inline-block self-center">
+                                    <img class="" src="images/icon-calendar.svg" alt="Calender">
+                                </div>
+                                <span>Calender</span>
+                            </a>
+
+                            <a href="#" class="flex flex-row gap-2">
+                                <div class="inline-block self-center">
+                                    <img class="" src="images/icon-reminders.svg" alt="Reminders">
+                                </div>
+                                <span>Reminders</span>
+                            </a>
+
+                            <a href="#" class="flex flex-row gap-2">
+                                <div class="inline-block self-center">
+                                    <img class="" src="images/icon-planning.svg" alt="Planning">
+                                </div>
+
+                                <span>Planning</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="Companylink dropdownHover">
+                        <span> Company</span>
+                        <img id="arrowCompanyLink" class="inline-block ml-2" src="images/icon-arrow-down.svg"
+                            alt="arrow down">
+                    </a>
+                    <!-- Dropdown menu -->
+                    <div
+                        class="DropdownCompany bg-white hidden w-full lg:absolute lg:top-9 lg:left-28 lg:rounded-xl lg:w-auto shadowitems ">
+                        <div class="flex flex-col gap-3 py-3 pl-6 lg:p-6 ">
+                            <a href=" #">History</a>
+                            <a href="#">Our Team</a>
+                            <a href="#">Blog</a>
+                        </div>
+                    </div>
+
+                    <a href="#">
+                        <span> Careers</span>
+                    </a>
+                    <a href="#">
+                        <span> About</span>
+                    </a>
+                </div>
+                <div class="flex flex-col gap-3 lg:gap-8 lg:flex-row">
+                    <button class="h-9 ">Login</button>
+                    <button class="bg-white rounded-xl lg:w-24 xl:w-28 h-9 btn-register">Register</button>
+                </div>
+
+            </div>
+
+            <!-- black layer -->
+            <div
+                class="w-full h-screen bg-black fixed top-0 left-0 z-10 transition-opacity opacity-0  transformBlackdiv BlackDiv">
+            </div>
+
+
+
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="grid  w-full min-h-full  gap-12
+            grid-cols lg:h-full lg:justify-center lg:items-end lg:px-40 lg:pt-16 lg:pb-32 lg:gap-20 ">
+            <div class="  overflow-hidden">
+                <img class="lg:hidden w-full" src="images/image-hero-mobile.png" alt="image-hero-section">
+
+                <img class="hidden lg:block w-full" src="images/image-hero-desktop.png" alt="image-hero-section">
+            </div>
+
+            <div
+                class="text-center flex flex-col lg:gap-8 justify-center  lg:text-left  lg:col-start-1 lg:col-end-2 lg:row-start-1  ">
+                <div>
+                    <h1 class="font-bold text-5xl mb-3 " id="h1SizeXl"> Make remote work</h1>
+                    <p
+                        class="colorGray text-xl font-medium md:my-6 py-6 px-3 md:px-12  lg:p-0 lg:my-12 xl:my-16 xl:text-2xl">
+                        Get
+                        your
+                        team in sync ,
+                        no
+                        matter your
+                        location.
+                        Streamline
+                        processes,
+                        create team rituals, and watch producticity soar.
+                    </p>
+
+                    <button
+                        class="bg-black  text-white font-bold w-40 h-14 rounded-2xl text-xl md:text-2xl md:w-44 md:h-16 lg:hover:bg-white lg:hover:text-black  lg:hover:border-black xl:hover:border-2 btn-learn">Learn
+                        more</button>
+                </div>
+
+
+                <div class="flex justify-between lg:items-end p-5 gap-6 mt-5 md:px-12 md:mt-16 lg:p-0">
+                    <div><img class="w-full" src="images/client-databiz.svg" alt="client-databiz"></div>
+                    <div><img class="w-full" src="images/client-audiophile.svg" alt="client-audiophile"></div>
+                    <div><img class="w-full" src="images/client-meet.svg" alt="client-meet"></div>
+                    <div><img class="w-full" src="images/client-maker.svg" alt="client-maker"></div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        const FeaturesLink = document.querySelector(".FeaturesLink");
+        const dropdownFeatures = document.querySelector(".dropdownFeatures");
+
+        const Companylink = document.querySelector(".Companylink");
+        const DropdownCompany = document.querySelector(".DropdownCompany");
+
+        const navMenu = document.querySelector(".div-navigation-item");
+        const navBtnOpen = document.querySelector(".btn-open");
+        const navBtnClose = document.querySelector(".btn-close");
+        const BlackDiv = document.querySelector(".BlackDiv");
+
+
+
+        FeaturesLink.addEventListener("click", () => {
+            var src = document.getElementById("arrow-menu-features").src;
+            var filename = src.replace(/^.*[\\\/]/, '');
+            var displaydropdownFeatures = dropdownFeatures.style.display;
+
+
+
+
+
+            if (filename == "icon-arrow-up.svg" && displaydropdownFeatures == "block") {
+                dropdownFeatures.style.display = "none";
+
+
+                document.getElementById("arrow-menu-features").src = "images/icon-arrow-down.svg";
+            }
+
+
+            else {
+                document.getElementById("arrow-menu-features").src = "images/icon-arrow-up.svg";
+                dropdownFeatures.style.display = "block";
+
+            }
+
+
+
+
+        });
+
+        Companylink.addEventListener("click", () => {
+
+            var src = document.getElementById("arrowCompanyLink").src;
+            var filename = src.replace(/^.*[\\\/]/, '');
+
+
+            var displaydropdownCompany = DropdownCompany.style.display;
+
+
+
+
+            if (filename == "icon-arrow-up.svg" && displaydropdownCompany == "block") {
+                DropdownCompany.style.display = "none";
+                document.getElementById("arrowCompanyLink").src = "images/icon-arrow-down.svg";
+            }
+
+
+            else {
+                document.getElementById("arrowCompanyLink").src = "images/icon-arrow-up.svg";
+                DropdownCompany.style.display = "block";
+
+
+
+            }
+
+        });
+
+
+        navBtnOpen.addEventListener("click", () => {
+            //navMenu.style.transition = "all 0.9s"
+            // navMenu.style.transform = " translateX(0px)";
+
+            navMenu.classList.remove("close-navigation-items");
+            navMenu.classList.add("open-navigation-items");
+
+
+
+
+
+
+
+            BlackDiv.classList.add("AddBlackDiv");
+
+
+
+
+
+
+        });
+
+
+
+        navBtnClose.addEventListener("click", () => {
+            //navMenu.style.transition = "all 0.8s linear"
+            // navMenu.style.transform = " translateX(800px)";
+            navMenu.classList.remove("open-navigation-items");
+            navMenu.classList.add("close-navigation-items");
+
+
+
+
+            BlackDiv.classList.remove("AddBlackDiv");
+
+
+
+
+
+
+
+
+        });
+
+
+        function transitionX() {
+            navMenu.style.transition = "0s"
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
