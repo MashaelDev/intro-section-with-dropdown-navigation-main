@@ -45,7 +45,6 @@
 
 
 
-
 .transformBlackdiv {
 
 
@@ -110,6 +109,7 @@
 
     #h1SizeXl {
         font-size: 3.5rem;
+        line-height: 1;
 
     }
 
